@@ -46,15 +46,10 @@ function getWeather(lat, lon, cityName) {
 }
 function currentDayDisplay(current, cityName) {
   console.log(current);
-  var weather = jsonData.current.list[0];
-
+  var weather = current.list[0];
   var temp = weather.main.temp;
   var humidity = weather.main.humidity;
   var wind = weather.wind.speed;
-  console.log("Temp", temp);
-  console.log("Humidity",humidity );
-  console.log("Wind",wind);
-
 
   var todayContainer = document.getElementById("today")
 
